@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Free Web tutorials for HTML and CSS">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="John Doe">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <meta http-equiv="refresh" content="30"> --> 
+		<title>HTML5 Complete Structure</title>
+		<link rel="icon" href="" type="image/x-icon">
+		<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->	<!-- Externak CSS Link -->
+		<!-- <script type="text/javascript" src="main.js"></script> -->	<!-- External JavaSceipt Link -->
+
+		 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">	<!-- Awesome Font Link -->
+
+		<!-- --------------------------------------------------Internal CSS Start-------------------------------------------------- -->
+		<style type="text/css">
+			
+			/* .........................Important & Mandatory Properties........... */
+				*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; } /* Universal Selector (All Elements Selected) */
+				html { font-size: 62.5%; } /*  62.5% = 10px = 1rem But By Default 100% = 16px = 1rem */
+				body { font-family: sans-serif; }
+				/* Selection Used By User To Select Content */
+				::selection {
+				background: yellow;
+				color: black;
+				outline: white;
+				cursor: pointer;
+			}
+
+			/* .........................Variable Creation Start.................... */
+				:root {
+					--width: 100vw;  	/* width: var(--width); | width: calc(var(--width) - 80vw); */
+					--height: 100vh;	/* height: var(--height); | height: calc(var(--height) - 80vh); */
+					--primary-color: #003CFF;	/* var(--primary-color); */
+					--secondary-color: #04A200;
+				}
+			/* .........................Variable Creation End...................... */
+
+
+
+
+
+
+			/* ..........................Media Query Start......................... */
+				
+				/* 4K - 2560px */
+				@media (max-width: 2560px) {
+					html {
+						font-size: 62.5%;
+					}
+				}
+
+				/* Laptop L - 1440px */
+				@media (max-width: 1440px) {
+					html {
+						font-size: 62.5%;
+					}
+				}
+
+				/* Laptop 1024px */
+				@media (max-width: 1024px) {
+					html {
+						font-size: 62.5%;
+					}	
+				}
+
+				/* Mini Laptop | Tablet 998px */
+				@media (max-width: 998px) {
+					html {
+						font-size: 55%;   55% = 8.8px 
+					}	
+				}
+
+				/* Tablet - 768px */
+				@media (max-width: 768px) {
+					html {
+						font-size: 45%;   45% = 7.2px 
+					}	
+				}
+
+				/* Mobile L - 425px */
+				@media (max-width: 425px) {
+					html {
+						font-size: 31.25%;
+					}	
+				}
+
+				/* Mobile M - 375px */
+				@media (max-width: 375px) {
+					html {
+						font-size: 31.25%;
+					}
+				}
+
+				/* Mobile S - 320px */
+				@media (max-width: 320px) {
+					html {
+						font-size: 31.25%;
+					}
+				}
+
+			/* ..........................Media Query End........................... */
+			
+		</style>
+		<!-- --------------------------------------------------Internal CSS End---------------------------------------------------- -->
+	</head>
+
+	<body>
+
+		<div style="color: #313B3E; font-size: 5rem; display: flex; justify-content: center; align-items: center;"><span style="color: #03B5EF;">mas</span>cretion.tech</div>
+
+		
+		<!-- --------------------------------------------------Internal JavaScript Start------------------------------------------- -->
+		<script type="text/javascript">	//Internal JavaScript
+			
+
+		</script>
+		<!-- --------------------------------------------------Internal JavaScript End--------------------------------------------- -->
+	</body>
+</html>
