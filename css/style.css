@@ -307,6 +307,7 @@ body {
   bottom: 0;
   display: -ms-grid;
   display: grid;
+  display: none;
   place-items: center;
 }
 
