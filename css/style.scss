@@ -1,0 +1,717 @@
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .........................Important & Mandatory Properties........... */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; } /* Universal Selector (All Elements Selected) */
+html { font-size: 62.5%; } /*  62.5% = 10px = 1rem But By Default 100% = 16px = 1rem */
+body { font-family: 'Montserrat', sans-serif; }
+// Selection Used By User To Select Content
+::selection {
+    background: yellow;
+    color: black;
+    outline: white;
+    cursor: pointer;
+}
+// External Font Export
+// @font-face {
+//     font-family: MontserratBold;
+//     src: url(/font/Montserrat-Bold.ttf);
+// }
+// @font-face {
+//     font-family: MontserratRegular;
+//     src: url(/font/Montserrat-Regular.ttf);
+// } 
+// @font-face {
+//     font-family: MontserratLight;
+//     src: url(/font/Montserrat-Light.ttf);
+// } 
+// @font-face {
+//     font-family: MontserratSemiBold;
+//     src: url(/font/Montserrat-SemiBold.ttf);
+// } 
+
+/* .........................Variable Creation Start.................... */
+:root {
+    --width: 100vw;  	/* width: var(--width); | width: calc(var(--width) - 80vw); */
+    --height: 100vh;	/* height: var(--height); | height: calc(var(--height) - 80vh); */
+    --primary-color: #00b4d5;	/* var(--primary-color); */
+    --secondary-color: #28536d;
+}
+/* .........................Variable Creation End...................... */
+
+
+
+.body_container {
+    height: var(--height);
+    width: var(--width);
+    background-image: url("/images/Background\ Wallpapers.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // background-position-x: center;
+    // background-position-y: -105px;
+    position: relative;
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding: 1.5rem 3.5rem 0 3.5rem;
+        .mascreation {
+            color: var(--secondary-color);
+            font-size: 3.6rem;
+            font-weight: 400;
+            padding-right: .5rem;
+            span {
+                color: var(--primary-color);
+                font-weight: 600;
+            }
+        }
+        .line {
+            width: 100%;
+            height: .25rem;
+            background: var(--primary-color);
+        }
+    }
+
+
+    .main_container {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        // background: var(--secondary-color);
+
+        .content_box {
+            width: 920px;
+            position: relative;
+            padding-top: 6rem;
+
+            .hello {
+                font-size: 8rem;
+                margin-left: -.4rem;
+                margin-bottom: -1rem;
+                color: var(--secondary-color);
+            }
+
+            .profile {
+                height: 350px;
+                width: auto;
+                background: linear-gradient(rgba(0, 140, 255, .8), rgba(54, 34, 73, .8));
+                .profile_details {
+                    // border: 1px solid black;
+                    padding: 4rem;
+                    color: #fff;
+                    .intro {
+                        .name {
+                            width: 63.25%;
+                            display: flex;
+                            justify-content: left;
+                            align-items: center;
+                            color: #fff;
+                            font-size: 4.45rem;
+                            font-weight: 400;
+                            border-bottom: .35rem solid #fff;
+                            border-radius: 5px;
+                            overflow: hidden;
+
+                            span {
+                                display: grid;
+                                place-items: center;
+                                padding: .65rem 1.5rem;
+                                margin-right: 1.5rem;
+                                font-size: 3.5rem;
+                                font-weight: 800;
+                                color: var(--secondary-color);
+                                background: #fff;
+                            }  
+                        }
+
+                        .desig {
+                            padding-top: .5rem;
+                            font-size: 2.75rem;
+                            font-weight: 200;
+                        }   
+                    }
+
+                    .buttons {
+                        // border: 1px solid black;
+                        width: 56%;
+                        margin-top: 5rem;
+                        .socila_meadia {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            justify-content: space-between;
+                            a {
+                                text-decoration: none;
+                                display: flex;
+                                color: #fff;
+                                // border: 1px solid aliceblue;
+                                border-radius: 12px;
+                                overflow: hidden;
+                                span {
+                                    display: grid;
+                                    place-items: center;
+                                    width: 45px;
+                                    height: 45px;
+                                    transition: .5s ease-in-out;
+                                    &:hover {
+                                        opacity: .8;
+                                        // border: 1px solid aliceblue;                                     
+                                        border: 1px solid transparent;                                     
+                                    }
+                                  }   
+                            }
+                            .w {
+                                background: url("/images/icon/w.png");
+                            }
+                            .f {
+                                background: url("/images/icon/f.png");
+                            }
+                            .i {
+                                background: url("/images/icon/i.png");
+                            }
+                            .t {
+                                background: url("/images/icon/t.png");
+                            }
+                            .p {
+                                background: url("/images/icon/p.png");
+                            }
+                            .l {
+                                background: url("/images/icon/l.png");
+                            }
+                            .y {
+                                background: url("/images/icon/y.png");
+                            }
+                            .icon{
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        }
+
+                        .action_button {
+                            margin-top: 3rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            a {
+                                text-decoration: none;
+                                display: grid;
+                                place-items: center;
+                                border-radius: 12px;
+                                width: 200px;
+                                height: 45px;
+                                font-size: 2rem;
+                                border: 1px solid rgba(255, 255, 255, 0.3);
+                                transition: all .25s ease-in-out;
+
+                                div {
+                                    display: grid;
+                                    place-items: center;
+                                    width: 195px;
+                                    height: 40px;
+                                    color: #fff;
+                                    border-radius: 10px;
+                                }
+                                .resume {
+                                    background: linear-gradient(#0bd30b, #008b2a);
+                                    transition: all .25s ease-in-out;
+                                    &:hover {
+                                        background: linear-gradient(#008b2a, #0bd30b);
+                                    }
+                                }
+                                .github {
+                                    background: linear-gradient(#3f2069, #2e1732);
+                                    transition: all .5s ease-in-out;
+                                    &:hover {
+                                        background: linear-gradient(#2e1732, #3f2069);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                img {
+                    height: 520px;
+                    position: absolute;
+                    right: 0;
+                    bottom: -3.1rem;
+                }
+            } 
+        }
+    }
+
+
+    .footer {
+        width: var(--width);
+        height: 10%;
+        // background: rgba($color: rgb(27, 27, 27), $alpha: 1.0);
+        background: linear-gradient(rgb(36, 36, 36), rgb(22, 22, 22));
+        position: absolute;
+        bottom: 0;
+        display: grid;
+        place-items: center;
+        p{
+            font-size: 2rem;
+            color: rgb(158, 158, 158);
+            span {
+                // color: var(--secondary-color);
+                color: rgb(218, 218, 218);
+                font-weight: 400;
+                span {
+                    color: var(--primary-color);     
+                }
+            }
+        }
+    }
+
+}
+
+// ##############################################################################################################
+// Less than 940px
+@media(max-width:939px) {
+    .body_container {
+        .main_container {
+            .content_box {
+                width: 750px;  
+                .hello {
+                    font-size: 6rem;
+                }
+                .profile {  
+                    .profile_details {
+                        padding: 2rem;
+                        .intro {
+                            .name {
+                                width: 60%;
+                                font-size: 3.4rem;
+                            }
+                            .desig {
+                                font-size: 2.2rem;
+                            }   
+                        }
+                        .buttons {
+                            width: 55%;
+                            .action_button {
+                                a {
+                                    width: 170px;
+                                    div {
+                                        width: 165px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                
+            }
+        }
+        .footer {
+            p{
+                font-size: 1.8rem;
+            }
+        }
+    
+    }
+}
+
+
+// ##############################################################################################################
+// Less than 768px
+@media(max-width:767px) {
+    .body_container {
+        // background-position-x: center;
+        // background-position-y: -105px;
+        .header {
+            .mascreation {
+                font-size: 2.5rem;
+                font-weight: 400;
+            }
+            .line {
+                height: .15rem;
+            }
+        }
+        .main_container {
+            .content_box {
+                height: 500px;
+                width: 98%;
+                position: relative;
+                padding-top: 5rem;
+                .hello {
+                    font-size: 5rem;
+                    margin-bottom: -.5rem;
+                }
+                .profile {
+                    height: 320px;
+                    background: linear-gradient(rgba(0, 140, 255, .8), rgba(54, 34, 73, .8));
+    
+                    .profile_details {
+                        // border: 1px solid black;
+                        padding: 4rem 1rem;
+                        color: #fff;
+                        // display: none;
+                        .intro {
+                            // border: 1px solid red;
+                            .name {
+                                width: 370px;
+                                font-size: 3rem;
+                                span {
+                                    padding: .5rem 1rem;
+                                    font-size: 2.5rem;
+                                }  
+                            }
+                            .desig {
+                                font-size: 1.9rem;
+                            }   
+                        }
+                        .buttons {
+                            // border: 1px solid black;
+                            width: 350px;
+                            margin-top: 5rem;
+                            .socila_meadia {
+                                a {
+                                    span {
+                                        width: 40px;
+                                        height: 40px;
+                                      }   
+                                }
+                            }
+                            .action_button {
+                                margin-top: 3rem;
+                                a {
+                                    width: 155px;
+                                    height: 44px;
+                                    font-size: 2rem;
+                                    div {
+                                        width: 150px;
+                                        height: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        height: 460px;
+                        right: -1.5rem;
+                        bottom: 4.6rem;
+                        // display: none;
+                    }
+                }
+            }
+        }
+        .footer {
+            p{
+                font-size: 1.5rem;
+            }
+        }
+    
+    }
+}
+
+// ################################################################################################################
+// Less than 668px
+@media (max-width:667px) {
+    .body_container {
+        // background-position-x: center;
+        // background-position-y: -105px;
+        .header {
+            padding: 1.5rem 1rem 0 1rem;
+            .mascreation {
+                font-size: 2rem;
+            }
+        }
+        .main_container {
+            .content_box {
+                // border: 1px solid black;
+                padding-top: 10rem;
+                height: 500px;
+                .hello {
+                    font-size: 4.5rem;
+                }
+                .profile {
+                    // border: 1px solid black;
+                    height: 320px;
+                    position: relative;
+                    display: grid;
+                    place-items: center;
+                    .profile_details {
+                        width: 96%;
+                        height: 240px;
+                        position: absolute;
+                        bottom: 0;
+                        z-index: 1;
+                        display: grid;
+                        place-items: center;
+                        // border: 1px solid black;
+                        background: rgba(0, 0, 0, 0.6);
+                        padding: 1.5rem 1rem;
+                        border-top-left-radius: 20px;
+                        border-top-right-radius: 20px;
+                        .intro {
+                            // border: 1px solid red;
+                            .name {
+                                width: 360px;
+                                font-size: 3rem;
+                                span {
+                                    padding: .6rem 1rem;
+                                    font-size: 2.5rem;
+                                }  
+                            }
+                            .desig {
+                                font-size: 1.85rem;
+                            }   
+                        }
+                        .buttons {
+                            // border: 1px solid black;
+                            width: 360px;
+                            margin-top: 2.5rem;
+                            .action_button {
+                                margin-top: 1.25rem;
+                            }
+                        }
+                    }
+                    img {
+                        height: 500px;
+                        right: 0;
+                        bottom: -3rem;
+                        // display: none;
+                    }
+                }
+            }
+        }
+        .footer {
+            p{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+// #################################################################################################################
+// Less then 425px
+@media(max-width:420px){
+    .body_container {
+        // background-position-x: center;
+        // background-position-y: -105px;
+        .main_container {
+            .content_box {
+                // border: 1px solid black;
+                width: 100%;
+                height: 500px;
+                .hello {
+                    font-size: 4.5rem;
+                }
+                .profile {
+                    // border: 1px solid black;
+                    .profile_details {
+                        // border: 1px solid black;
+                        .intro {
+                            // border: 1px solid red;
+                            .name {
+                                width: 320px;
+                                font-size: 2.57rem;
+                                span {
+                                    padding: .5rem .8rem;
+                                    font-size: 2.6rem;
+                                    margin-right: .8rem;
+                                }  
+                            }
+                            .desig {
+                                font-size: 1.65rem;
+                            }   
+                        }
+                        .buttons {
+                            // border: 1px solid black;
+                            width: 320px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            p{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+// ############################################################################################################
+// Less then 375px
+@media(max-width:374px){
+    .body_container {
+        // background-position-x: center;
+        // background-position-y: -105px;
+        .main_container {
+            padding: 0;
+            .content_box {
+                // border: 1px solid black;
+                .hello {
+                    font-size: 4.5rem;
+                    margin: 0;
+                }
+                .profile {
+                    // border: 1px solid black;
+                    height: 320px;
+                    .profile_details {
+                        width: 98%;
+                        // border: 1px solid black;
+                        padding: 1.5rem 1rem;
+                        .intro {
+                            // border: 1px solid red;
+                            .name {
+                                width: 100%;
+                                font-size: 2.2rem;
+                                span {
+                                    padding: .6rem 1rem;
+                                    font-size: 2.5rem;
+                                }  
+                            }
+                            .desig {
+                                font-size: 1.5rem;
+                            }   
+                        }
+                        .buttons {
+                            // border: 1px solid black;
+                            width: 100%;
+                            margin-top: 2.5rem;
+                            .action_button {
+                                margin-top: 1.25rem;
+                                a {
+                                    width: 130px;
+                                    height: 40px;
+                                    font-size: 1.6rem;
+                                    div {
+                                        width: 125px;
+                                        height: 35px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    img {
+                        height: 460px;
+                        bottom: -2.6rem;
+                        // display: none;
+                    }
+                }
+            }
+        }
+        .footer {
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+// ##############################################################################################################
+// Equal to 360px
+@media(width:360px){
+    .body_container {
+        // background-position-x: center;
+        // background-position-y: -105px;
+        .main_container {
+            padding: .5rem;
+            .content_box {
+                // border: 1px solid black;
+                .profile {
+                    // border: 1px solid black;
+                    height: 320px;
+                    .profile_details {
+                        .intro {
+                            // border: 1px solid red;
+                            .name {
+                                width: 100%;
+                                font-size: 2.6rem;
+                                span {
+                                    padding: .6rem 1rem;
+                                    font-size: 2.5rem;
+                                }  
+                            }
+                            .desig {
+                                font-size: 1.65rem;
+                            }   
+                        }
+                        .buttons {
+                            .action_button {
+                                a {
+                                    width: 150px;
+                                    div {
+                                        width: 145px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+// ###########################################################################################################
+
+
+
+/* ..........................Media Query Start......................... */
+
+    /* 4K - 2560px */
+    @media (max-width: 2560px) {
+        html {
+            /*font-size: 62.5%;*/
+        }
+    }
+
+    /* Laptop L - 1440px */
+    @media (max-width: 1440px) {
+        html {
+            /*font-size: 62.5%;*/
+        }
+    }
+
+    /* Laptop 1024px */
+    @media (max-width: 1024px) {
+        html {
+            /*font-size: 62.5%;*/
+        }	
+    }
+
+    /* Mini Laptop | Tablet 998px */
+    @media (max-width: 998px) {
+        html {
+            /*font-size: 55%;   55% = 8.8px */
+        }	
+    }
+
+    /* Tablet - 768px */
+    @media (max-width: 768px) {
+        html {
+            /*font-size: 45%;   45% = 7.2px */
+        }	
+    }
+
+    /* Mobile L - 425px */
+    @media (max-width: 425px) {
+        html {
+            /*font-size: 31.25%;*/
+        }	
+    }
+
+    /* Mobile M - 375px */
+    @media (max-width: 375px) {
+        html {
+            /*font-size: 31.25%;*/
+        }
+    }
+
+    /* Mobile S - 320px */
+    @media (max-width: 320px) {
+        html {
+            /*font-size: 31.25%;*/
+        }
+    }
+
+/* ..........................Media Query End........................... */
