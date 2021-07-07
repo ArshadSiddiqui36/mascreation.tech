@@ -414,7 +414,7 @@ body {
     width: 150px;
     height: 40px;
   }
-  .body_container .main_container .content_box .profile img {
+  .body_container .main_container .content_box .profile img#myImage {
     height: 460px;
     right: -1.5rem;
     bottom: 4.6rem;
@@ -477,7 +477,7 @@ body {
   .body_container .main_container .content_box .profile .profile_details .buttons .action_button {
     margin-top: 1.25rem;
   }
-  .body_container .main_container .content_box .profile img {
+  .body_container .main_container .content_box .profile img#myImage {
     height: 500px;
     right: 0;
     bottom: -3rem;
@@ -557,7 +557,7 @@ body {
     width: 125px;
     height: 35px;
   }
-  .body_container .main_container .content_box .profile img {
+  .body_container .main_container .content_box .profile img#myImage {
     height: 460px;
     bottom: -2.6rem;
   }
