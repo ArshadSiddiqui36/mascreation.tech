@@ -46,7 +46,7 @@ body {
 .body_container {
   height: var(--height);
   width: var(--width);
-  background-image: url("/images/Background Wallpapers.png");
+  background-image: url("/images/Background-Wallpapers.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -175,10 +175,10 @@ body {
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia a {
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -189,46 +189,46 @@ body {
   place-items: center;
   width: 45px;
   height: 45px;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia a span:hover {
   opacity: .8;
-  border: 1px solid transparent;
+  border: 0.5px solid rgba(240, 248, 255, 0.5);
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .w {
-  background: url("/images/icon/w.png");
+  background: url("/images/icon/WhatsApp0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .f {
-  background: url("/images/icon/f.png");
+  background: url("/images/icon/Facebook0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .i {
-  background: url("/images/icon/i.png");
+  background: url("/images/icon/Instagram0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .t {
-  background: url("/images/icon/t.png");
+  background: url("/images/icon/Twitter0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .p {
-  background: url("/images/icon/p.png");
+  background: url("/images/icon/Pinterest0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .l {
-  background: url("/images/icon/l.png");
+  background: url("/images/icon/LinkedIn0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .y {
-  background: url("/images/icon/y.png");
+  background: url("/images/icon/YouTube0.svg");
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .icon {
-  background-size: cover;
-  background-position: center;
+  background-size: 300%;
+  background-position: 51.5% 49%;
 }
 
 .body_container .main_container .content_box .profile .profile_details .buttons .action_button {
@@ -292,7 +292,7 @@ body {
   background: linear-gradient(#2e1732, #3f2069);
 }
 
-.body_container .main_container .content_box .profile img {
+.body_container .main_container .content_box .profile img#myImage {
   height: 520px;
   position: absolute;
   right: 0;

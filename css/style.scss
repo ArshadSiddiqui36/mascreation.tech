@@ -13,6 +13,7 @@ body { font-family: 'Montserrat', sans-serif; }
     outline: white;
     cursor: pointer;
 }
+
 // External Font Export
 // @font-face {
 //     font-family: MontserratBold;
@@ -45,7 +46,7 @@ body { font-family: 'Montserrat', sans-serif; }
 .body_container {
     height: var(--height);
     width: var(--width);
-    background-image: url("/images/Background\ Wallpapers.png");
+    background-image: url("/images/Background-Wallpapers.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -145,49 +146,56 @@ body { font-family: 'Montserrat', sans-serif; }
                             justify-content: space-between;
                             a {
                                 text-decoration: none;
-                                display: flex;
-                                color: #fff;
-                                // border: 1px solid aliceblue;
+                                display: grid;
+                                place-items: center;
+                                color: rgba(255, 255, 255, .2);
                                 border-radius: 12px;
+                                // border: 1px solid rgba(240, 248, 255, .2);
                                 overflow: hidden;
+                                // &:hover {
+                                //     border: none;
+                                // }
                                 span {
                                     display: grid;
                                     place-items: center;
                                     width: 45px;
                                     height: 45px;
-                                    transition: .5s ease-in-out;
+                                    transition: .2s ease-in-out;
+                                    // border: 1px solid #fff;
                                     &:hover {
                                         opacity: .8;
-                                        // border: 1px solid aliceblue;                                     
-                                        border: 1px solid transparent;                                     
+                                        border: .5px solid rgba(240, 248, 255, .5);                                     
+                                        // border: 1px solid transparent;                                   
                                     }
                                   }   
                             }
                             .w {
-                                background: url("/images/icon/w.png");
+                                background: url("/images/icon/WhatsApp0.svg");
                             }
                             .f {
-                                background: url("/images/icon/f.png");
+                                background: url("/images/icon/Facebook0.svg");
                             }
                             .i {
-                                background: url("/images/icon/i.png");
+                                background: url("/images/icon/Instagram0.svg");
                             }
                             .t {
-                                background: url("/images/icon/t.png");
+                                background: url("/images/icon/Twitter0.svg");
                             }
                             .p {
-                                background: url("/images/icon/p.png");
+                                background: url("/images/icon/Pinterest0.svg");
                             }
                             .l {
-                                background: url("/images/icon/l.png");
+                                background: url("/images/icon/LinkedIn0.svg");
                             }
                             .y {
-                                background: url("/images/icon/y.png");
+                                background: url("/images/icon/YouTube0.svg");
                             }
                             .icon{
-                                background-size: cover;
-                                background-position: center;
+                                background-size: 300%;
+                                background-position: 51.5% 49%;
+                                // background-position: center;
                             }
+                            
                         }
 
                         .action_button {
@@ -233,7 +241,7 @@ body { font-family: 'Montserrat', sans-serif; }
                     }
                 }
 
-                img {
+                img#myImage {
                     height: 520px;
                     position: absolute;
                     right: 0;
@@ -653,6 +661,22 @@ body { font-family: 'Montserrat', sans-serif; }
 
 }
 // ###########################################################################################################
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
