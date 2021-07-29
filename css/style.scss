@@ -5,7 +5,10 @@
 /* .........................Important & Mandatory Properties........... */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; } /* Universal Selector (All Elements Selected) */
 html { font-size: 62.5%; } /*  62.5% = 10px = 1rem But By Default 100% = 16px = 1rem */
-body { font-family: 'Montserrat', sans-serif; }
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
 // Selection Used By User To Select Content
 ::selection {
     background: yellow;
@@ -115,8 +118,10 @@ body { font-family: 'Montserrat', sans-serif; }
                             border-bottom: .35rem solid #fff;
                             border-radius: 5px;
                             overflow: hidden;
+                            // position: relative;
 
                             span {
+                                // position: absolute;
                                 display: grid;
                                 place-items: center;
                                 padding: .65rem 1.5rem;
@@ -125,14 +130,14 @@ body { font-family: 'Montserrat', sans-serif; }
                                 font-weight: 800;
                                 color: var(--secondary-color);
                                 background: #fff;
-                            }  
+                            }
                         }
 
                         .desig {
                             padding-top: .5rem;
                             font-size: 2.23rem;
                             font-weight: 200;
-                        }   
+                        }
                     }
 
                     .buttons {
@@ -164,10 +169,10 @@ body { font-family: 'Montserrat', sans-serif; }
                                     // border: 1px solid #fff;
                                     &:hover {
                                         opacity: .8;
-                                        border: .5px solid rgba(240, 248, 255, .5);                                     
-                                        // border: 1px solid transparent;                                   
+                                        border: .5px solid rgba(240, 248, 255, .5);
+                                        // border: 1px solid transparent;
                                     }
-                                  }   
+                                  }
                             }
                             .w {
                                 background: url("/images/icon/WhatsApp0.svg");
@@ -195,7 +200,7 @@ body { font-family: 'Montserrat', sans-serif; }
                                 background-position: 51.5% 49%;
                                 // background-position: center;
                             }
-                            
+
                         }
 
                         .action_button {
@@ -255,6 +260,7 @@ body { font-family: 'Montserrat', sans-serif; }
     .footer {
         width: var(--width);
         height: 10%;
+        margin-top: auto;
         // background: rgba($color: rgb(27, 27, 27), $alpha: 1.0);
         background: linear-gradient(rgb(36, 36, 36), rgb(22, 22, 22));
         position: absolute;
@@ -269,7 +275,7 @@ body { font-family: 'Montserrat', sans-serif; }
                 color: rgb(218, 218, 218);
                 font-weight: 400;
                 span {
-                    color: var(--primary-color);     
+                    color: var(--primary-color);
                 }
             }
         }
@@ -683,59 +689,59 @@ body { font-family: 'Montserrat', sans-serif; }
 /* ..........................Media Query Start......................... */
 
     /* 4K - 2560px */
-    @media (max-width: 2560px) {
-        html {
-            /*font-size: 62.5%;*/
-        }
-    }
+    // @media (max-width: 2560px) {
+    //     html {
+    //         /*font-size: 62.5%;*/
+    //     }
+    // }
 
     /* Laptop L - 1440px */
-    @media (max-width: 1440px) {
-        html {
-            /*font-size: 62.5%;*/
-        }
-    }
+    // @media (max-width: 1440px) {
+    //     html {
+    //         /*font-size: 62.5%;*/
+    //     }
+    // }
 
     /* Laptop 1024px */
-    @media (max-width: 1024px) {
-        html {
-            /*font-size: 62.5%;*/
-        }	
-    }
+    // @media (max-width: 1024px) {
+    //     html {
+    //         /*font-size: 62.5%;*/
+    //     }	
+    // }
 
     /* Mini Laptop | Tablet 998px */
-    @media (max-width: 998px) {
-        html {
-            /*font-size: 55%;   55% = 8.8px */
-        }	
-    }
+    // @media (max-width: 998px) {
+    //     html {
+    //         /*font-size: 55%;   55% = 8.8px */
+    //     }	
+    // }
 
     /* Tablet - 768px */
-    @media (max-width: 768px) {
-        html {
-            /*font-size: 45%;   45% = 7.2px */
-        }	
-    }
+    // @media (max-width: 768px) {
+    //     html {
+    //         /*font-size: 45%;   45% = 7.2px */
+    //     }	
+    // }
 
     /* Mobile L - 425px */
-    @media (max-width: 425px) {
-        html {
-            /*font-size: 31.25%;*/
-        }	
-    }
+    // @media (max-width: 425px) {
+    //     html {
+    //         /*font-size: 31.25%;*/
+    //     }	
+    // }
 
     /* Mobile M - 375px */
-    @media (max-width: 375px) {
-        html {
-            /*font-size: 31.25%;*/
-        }
-    }
+    // @media (max-width: 375px) {
+    //     html {
+    //         /*font-size: 31.25%;*/
+    //     }
+    // }
 
     /* Mobile S - 320px */
-    @media (max-width: 320px) {
-        html {
-            /*font-size: 31.25%;*/
-        }
-    }
+    // @media (max-width: 320px) {
+    //     html {
+    //         /*font-size: 31.25%;*/
+    //     }
+    // }
 
 /* ..........................Media Query End........................... */

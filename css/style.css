@@ -15,6 +15,7 @@ html {
 /*  62.5% = 10px = 1rem But By Default 100% = 16px = 1rem */
 body {
   font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
 }
 
 ::-moz-selection {
@@ -302,6 +303,7 @@ body {
 .body_container .footer {
   width: var(--width);
   height: 10%;
+  margin-top: auto;
   background: -webkit-gradient(linear, left top, left bottom, from(#242424), to(#161616));
   background: linear-gradient(#242424, #161616);
   position: absolute;
@@ -594,60 +596,12 @@ body {
 
 /* ..........................Media Query Start......................... */
 /* 4K - 2560px */
-@media (max-width: 2560px) {
-  html {
-    /*font-size: 62.5%;*/
-  }
-}
-
 /* Laptop L - 1440px */
-@media (max-width: 1440px) {
-  html {
-    /*font-size: 62.5%;*/
-  }
-}
-
 /* Laptop 1024px */
-@media (max-width: 1024px) {
-  html {
-    /*font-size: 62.5%;*/
-  }
-}
-
 /* Mini Laptop | Tablet 998px */
-@media (max-width: 998px) {
-  html {
-    /*font-size: 55%;   55% = 8.8px */
-  }
-}
-
 /* Tablet - 768px */
-@media (max-width: 768px) {
-  html {
-    /*font-size: 45%;   45% = 7.2px */
-  }
-}
-
 /* Mobile L - 425px */
-@media (max-width: 425px) {
-  html {
-    /*font-size: 31.25%;*/
-  }
-}
-
 /* Mobile M - 375px */
-@media (max-width: 375px) {
-  html {
-    /*font-size: 31.25%;*/
-  }
-}
-
 /* Mobile S - 320px */
-@media (max-width: 320px) {
-  html {
-    /*font-size: 31.25%;*/
-  }
-}
-
 /* ..........................Media Query End........................... */
 /*# sourceMappingURL=style.css.map */
