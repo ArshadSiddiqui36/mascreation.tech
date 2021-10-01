@@ -227,6 +227,10 @@ body {
   background: url("/images/icon/YouTube0.svg");
 }
 
+.body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .b {
+  background: url("/images/icon/Behance.svg");
+}
+
 .body_container .main_container .content_box .profile .profile_details .buttons .socila_meadia .icon {
   background-size: 300%;
   background-position: 51.5% 49%;
